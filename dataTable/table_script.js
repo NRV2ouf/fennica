@@ -1,11 +1,79 @@
-window.addEventListener('DOMContentLoaded', init);
 
 let dTable;
+let size;
+window.addEventListener('DOMContentLoaded', init);
+
+/** TODO
+ * Check if file exists (~parse text result)
+ * Only load a part of bigger files and send a notification to user if the file is trimmed.
+*/
 
 function init() {
-  const path = getPathFromURL();
-  document.title = path;
-  createTable(path);
+    const path = getPathFromURL();
+    const maxSize = 5000000; // 5MB
+
+    setFile(path);
+    displayFileSize(path)
+    .then(() => {
+        if (size <= maxSize){
+            createTable(path);
+        } else {
+            hideLoader();
+            window.alert("This file is too heavy for displaying...\nBut you can download it from the top right corner !")
+        }
+    });
+}
+
+function hideLoader(){
+    document.getElementById("loading").setAttribute("style", "display:none");
+}
+
+/***** Fill header content **********************/
+/************************************************/
+
+function displayFileSize(path) {
+    return new Promise((resolve, reject) => {
+        fetch(path)
+            .then(response => response.headers.get("content-length"))
+            .then(fileSize => {
+                setFileSize(fileSize);
+                resolve(fileSize);
+            })
+            .catch(error => reject(error));
+    });
+}
+
+function setFile(path){
+    const fileName = path.split("/").at(-1);
+    document.title = fileName;
+    document.getElementById('fileName').textContent = fileName;
+    document.getElementById('download').setAttribute('href', path);
+}
+
+function setFileSize(fileSize){
+    size = fileSize;
+    span = document.getElementById('fileSize');
+    if (fileSize >= 1000){
+        fileSize = Math.round(fileSize / 1000 * 10) / 10;
+        if (fileSize >= 1000){
+            fileSize = Math.round(fileSize / 1000 * 10) / 10;
+            if (fileSize >= 1000){
+                fileSize = Math.round(fileSize / 1000 * 10) / 10;
+                if (fileSize >= 1000){
+                    fileSize = Math.round(fileSize / 1000 * 10) / 10;
+                    span.textContent = fileSize + "TB";
+                } else {
+                    span.textContent = fileSize + "GB";
+                }
+            } else {
+                span.textContent = fileSize + "MB";
+            }
+        } else {
+            span.textContent = fileSize + "kB";
+        }
+    } else {
+        span.textContent = fileSize + "B";
+    }
 }
 
 /***** Fetch URL parameter **********************/
@@ -70,6 +138,8 @@ function initializeDataTable() {
     dTable = new DataTable('#dataTable', {
         responsive: true,
         "lengthMenu": [5, 10, 15, 20, 25, 50, 100],
-        "pageLength": 20
+        "pageLength": 15
     });
+
+    hideLoader();
 }
