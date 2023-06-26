@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Holder</title>
+<title>5&nbsp; Language summaries</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./note_dissertation.html" rel="next">
-<link href="./language.html" rel="prev">
+<link href="./holder.html" rel="next">
+<link href="./corporate.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./holder.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Holder</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./language.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Language</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -138,13 +138,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./language.html" class="sidebar-item-text sidebar-link">
+  <a href="./language.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Language</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./holder.html" class="sidebar-item-text sidebar-link active">
+  <a href="./holder.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Holder</span></span></a>
   </div>
 </li>
@@ -226,14 +226,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#top-languages" id="toc-top-languages" class="nav-link active" data-scroll-target="#top-languages"><span class="header-section-number">5.1</span> Top languages</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/fennicahub/fennica/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Holder</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Language summaries</span></h1>
 </div>
 
 
@@ -249,25 +255,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ul>
-<li><a href="dataTable/data_table.html?path=../output.tables/holder_accepted.csv">Unique accepted entries</a>: 2126</li>
-<li><a href="dataTable/data_table.html?path=../output.tables/holder_discarded.csv">Unique discarded entries in original data</a> (excluding NA cases): 0</li>
-<li>Original documents with non-NA titles: 36295 / 71919 (50.5%)</li>
-<li>Original documents with missing (NA) titles 35624 / 71919 documents (49.5%)</li>
+<li>40 <a href="dataTable/data_table.html?path=../output.tables/languages_accepted.csv">unique languages</a></li>
+<li>34 <a href="dataTable/data_table.html?path=../output.tables/language_primary_accepted.csv">unique primary languages</a><br>
+</li>
+<li>67623 single-language documents (94.03%)</li>
+<li>4296 multilingual documents (5.97%)</li>
+<li><a href="dataTable/data_table.html?path=../output.tables/language_conversions.csv">Conversions from raw to preprocessed language entries</a></li>
+<li>733 documents (1.02%) with <a href="dataTable/data_table.html?path=../output.tables/language_discarded.csv">unrecognized language</a></li>
 </ul>
-<p>Top-20 titles and their title counts.</p>
+<p>Language codes are from <a href="http://www.loc.gov/marc/languages/language_code.html">MARC</a>; new custom abbreviations can be added in <a href="dataTable/data_table.html?path=../output.tables/language_abbreviations.csv">this table</a>.</p>
+<section id="top-languages" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="top-languages"><span class="header-section-number">5.1</span> Top languages</h2>
+<p>Number of titles assigned with each language (top-10). For a complete list, see <a href="dataTable/data_table.html?path=../output.tables/language_accepted.csv">accepted languages</a>.</p>
+<div class="cell-output-display">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Language</th>
+<th style="text-align: left;">Documents (n)</th>
+<th style="text-align: left;">Fraction (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Finnish</td>
+<td style="text-align: left;">32708</td>
+<td style="text-align: left;">45.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Swedish</td>
+<td style="text-align: left;">23476</td>
+<td style="text-align: left;">32.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Latin</td>
+<td style="text-align: left;">6587</td>
+<td style="text-align: left;">9.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">German</td>
+<td style="text-align: left;">1899</td>
+<td style="text-align: left;">2.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Finnish;Swedish</td>
+<td style="text-align: left;">1397</td>
+<td style="text-align: left;">1.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Russian</td>
+<td style="text-align: left;">749</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Undetermined</td>
+<td style="text-align: left;">733</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">French</td>
+<td style="text-align: left;">646</td>
+<td style="text-align: left;">0.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Latin;Swedish</td>
+<td style="text-align: left;">610</td>
+<td style="text-align: left;">0.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">345</td>
+<td style="text-align: left;">0.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Title count per language (including multi-language documents; note the log10 scale):</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="figure/rmd_holder_summarytitle-holder-1.png" class="img-fluid" width="768"></p>
-</div>
-</div>
-<p>Frequency of unique titles:</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="figure/rmd_holder_uniquetitles-holder-1.png" class="img-fluid" width="768"></p>
+<p><img src="language_files/figure-html/summarylang-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -620,13 +691,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./language.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Language</span></span>
+      <a href="./corporate.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Corporate</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./note_dissertation.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Note dissertation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./holder.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Holder</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -634,4 +705,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/fennicahub/fennica/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
+</body></html>
