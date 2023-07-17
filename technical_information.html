@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Summary of the statistics about the place of publication of the articles">
 
-<title>5&nbsp; Publisher preprocessing</title>
+<title>Technical information</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./publication_place.html" rel="next">
-<link href="./language.html" rel="prev">
+<link href="./acknowledgments.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -77,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./publisher.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Publisher preprocessing</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./acknowledgments.html">Appendices</a></li><li class="breadcrumb-item"><a href="./technical_information.html">Technical information</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -134,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./publisher.html" class="sidebar-item-text sidebar-link active">
+  <a href="./publisher.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Publisher preprocessing</span></span></a>
   </div>
 </li>
@@ -179,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./technical_information.html" class="sidebar-item-text sidebar-link">
+  <a href="./technical_information.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Technical information</span></a>
   </div>
 </li>
@@ -198,14 +230,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Publisher preprocessing</span></h1>
+<h1 class="title">Technical information</h1>
 </div>
 
-<div>
-  <div class="description">
-    Summary of the statistics about the place of publication of the articles
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -218,85 +245,53 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<ul>
-<li><p>156327 <a href="dataTable/data_table.html?path=../output.tables/publisher_accepted.csv">unique publishers</a></p></li>
-<li><p>948595 documents have unambiguous publisher information (79.9%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).</p></li>
-<li><p><a href="dataTable/data_table.html?path=../output.tables/publisher_discarded.csv">Discarded publisher entries</a></p></li>
-<li><p><a href="dataTable/data_table.html?path=../output.tables/publisher_conversion_nontrivial.csv">Conversions from original to final names</a> (only non-trivial conversions shown)</p></li>
-</ul>
-<p>The 20 most common publishers are shown with the number of documents.</p>
+<p>This document was generated with the following packages:</p>
 <div class="cell">
-<div class="cell-output-display">
-<p><img src="publisher_files/figure-html/summarypublisher2-1.png" class="img-fluid" width="1152"></p>
-</div>
-</div>
-<p>Title count versus paper consumption (top publishers):</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="publisher_files/figure-html/publishertitlespapers-1.png" class="img-fluid" width="768"></p>
-</div>
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">publisher</th>
-<th style="text-align: right;">titles</th>
-<th style="text-align: right;">paper</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Gummerus,</td>
-<td style="text-align: right;">10534</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Karisto,</td>
-<td style="text-align: right;">8588</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Maanmittaushallitus,</td>
-<td style="text-align: right;">8067</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Maanmittauslaitos,</td>
-<td style="text-align: right;">5143</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Otava,</td>
-<td style="text-align: right;">37211</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Söderström,</td>
-<td style="text-align: right;">8052</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tammi,</td>
-<td style="text-align: right;">14788</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">University of Helsinki,</td>
-<td style="text-align: right;">8531</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">WSOY,</td>
-<td style="text-align: right;">46354</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">[kustantaja tuntematon],</td>
-<td style="text-align: right;">26263</td>
-<td style="text-align: right;">0</td>
-</tr>
-</tbody>
-</table>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>R version 4.3.1 (2023-06-16)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 22.04.2 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
+LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: UTC
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] fennica_0.2.9     Cairo_1.6-0       ggplot2_3.4.2     R.utils_2.12.2   
+ [5] R.oo_1.25.0       R.methodsS3_1.8.2 knitr_1.43        stringr_1.5.0    
+ [9] tm_0.7-11         NLP_0.2-1         dplyr_1.1.2       devtools_2.4.5   
+[13] usethis_2.2.2    
+
+loaded via a namespace (and not attached):
+ [1] utf8_1.2.3        generics_0.1.3    xml2_1.3.5        slam_0.1-50      
+ [5] stringi_1.7.12    digest_0.6.33     magrittr_2.0.3    grid_4.3.1       
+ [9] evaluate_0.21     pkgload_1.3.2.1   fastmap_1.1.1     jsonlite_1.8.7   
+[13] processx_3.8.2    pkgbuild_1.4.2    sessioninfo_1.2.2 urlchecker_1.0.1 
+[17] ps_1.7.5          promises_1.2.0.1  purrr_1.0.1       fansi_1.0.4      
+[21] scales_1.2.1      stringdist_0.9.10 XML_3.99-0.14     cli_3.6.1        
+[25] shiny_1.7.4.1     rlang_1.1.1       crayon_1.5.2      munsell_0.5.0    
+[29] ellipsis_0.3.2    withr_2.5.0       remotes_2.4.2     cachem_1.0.8     
+[33] tools_4.3.1       parallel_4.3.1    memoise_2.0.1     colorspace_2.1-0 
+[37] httpuv_1.6.11     vctrs_0.6.3       R6_2.5.1          mime_0.12        
+[41] lifecycle_1.0.3   fs_1.6.2          htmlwidgets_1.6.2 miniUI_0.1.1.1   
+[45] pkgconfig_2.0.3   callr_3.7.3       gtable_0.3.3      pillar_1.9.0     
+[49] later_1.3.1       data.table_1.14.8 glue_1.6.2        profvis_0.3.8    
+[53] Rcpp_1.0.11       xfun_0.39         tibble_3.2.1      tidyselect_1.2.0 
+[57] rstudioapi_0.15.0 xtable_1.8-4      htmltools_0.5.5   rmarkdown_2.23   
+[61] compiler_4.3.1    prettyunits_1.1.1</code></pre>
 </div>
 </div>
 
@@ -653,14 +648,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./language.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Languages</span></span>
+      <a href="./acknowledgments.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Acknowledgements</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./publication_place.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Publication place preprocessing</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
