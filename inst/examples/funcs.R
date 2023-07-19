@@ -3060,7 +3060,7 @@ enrich_author <- function(df) {
 
     # Custom table to harmonize multiple author name variants
     f <- system.file("extdata/ambiguous-authors.csv", package = "fennica")
-    ambiguous.authors <- read_mapping(f, mode = "list", sep = ";", self.match = FALSE, include.lowercase = FALSE, fast = TRUE)
+    ambiguous.authors <- read_mapping(f, mode = "list", sep = "\t", self.match = FALSE, include.lowercase = FALSE, fast = TRUE)
     
     # Combine synonymous authors; augment author life years where missing etc.
     aa <- augment_author(df, life.info, ambiguous.authors)
