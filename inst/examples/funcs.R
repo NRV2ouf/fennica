@@ -200,7 +200,7 @@ get_country <- function (x, map = NULL) {
   if (is.null(map)) {
     f <- "reg2country.csv"
     message(paste("Reading region-country mappings from file ", f))
-    map <- read_mapping(f, mode = "table", sep = ";", sort = TRUE, self.match = FALSE, include.lowercase = FALSE, ignore.empty = FALSE, remove.ambiguous = TRUE, lowercase.only = FALSE, from = "region", to = "country") 
+    map <- read_mapping(f, mode = "table", sep = "\t", sort = TRUE, self.match = FALSE, include.lowercase = FALSE, ignore.empty = FALSE, remove.ambiguous = TRUE, lowercase.only = FALSE, from = "region", to = "country") 
   }
   
   message("Map each region in x to a country")

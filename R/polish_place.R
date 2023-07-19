@@ -24,7 +24,7 @@ polish_place <- function (x, synonymes = NULL, remove.unknown = FALSE, verbose =
     # Harmonize places with synonyme table
     f <- system.file("extdata/replace_special_chars.csv",
 		package = "fennica")
-    spechars <- suppressWarnings(read_mapping(f, sep = ";", mode = "table", include.lowercase = TRUE))
+    spechars <- suppressWarnings(read_mapping(f, sep = "\t", mode = "table", include.lowercase = TRUE))
 
     if (verbose) { message(paste("Reading publication place synonyme table", f)) }
     f <- system.file("extdata/harmonize_place.csv", package = "fennica")
