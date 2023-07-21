@@ -51,11 +51,10 @@ jobs:
       - name : Import output.tables
         run : cp -r inst/examples/output.tables inst/examples/_book/
       
-      #TODO: change location from output.tables to extdata
       - name : Import extdata
         run : |
           mkdir -p inst/examples/_book/extdata
-          cp -r inst/extdata/*csv inst/examples/_book/output.tables/
+          cp -r inst/extdata/*csv inst/examples/_book/extdata
         
       - name: Deploy package
         run: |
