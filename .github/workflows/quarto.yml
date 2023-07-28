@@ -54,7 +54,7 @@ jobs:
       - name : Import extdata
         run : |
           mkdir -p inst/examples/_book/extdata
-          cp -r inst/extdata/*csv inst/examples/_book/extdata
+          cp -r inst/extdata/*csv inst/examples/_book/output.tables/
         
       - name: Deploy package
         run: |

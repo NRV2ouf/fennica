@@ -20,7 +20,7 @@ Publication interval is available for `r sum(!is.na(df$publication_interval_from
 
 [Publication interval accepted](dataTable/data_table.html?path=../output.tables/publication_interval_accepted.csv)
 
-[Publication interval conversions](dataTable/data_table.html?path=../output.tables/publication_interval_conversion_nontrivial.csv)
+# [Publication interval conversions](dataTable/data_table.html?path=../output.tables/publication_interval_conversion_nontrivial.csv)
 
 [Publication interval discarded](dataTable/data_table.html?path=../output.tables/publication_interval_discarded.csv)
 

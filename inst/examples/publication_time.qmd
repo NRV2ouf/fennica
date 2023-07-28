@@ -14,7 +14,7 @@ source("init.R")
 source("publication_time.R")
 ```
 
-[Publication year conversions](dataTable/data_table.html?path=../output.tables/publication_time_conversion.csv)
+# [Publication year conversions](dataTable/data_table.html?path=../output.tables/publication_time_conversion.csv)
 
 [Publication year discarded](dataTable/data_table.html?path=../output.tables/publication_time_discarded.csv)
 
